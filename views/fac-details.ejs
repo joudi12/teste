@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/Fav/<%= result.id%>?_method=PUT" method="POST">
+        <input  type="text" name="type" value="<%= result.type%>" >
+        <input type="text" name="text" value="<%= result.text%>">
+<button type="submit">updait </button>
+    </form>
+    <form action="/Fav/<%= result.id%>?_method=delete" method="POST">
+       
+<button type="submit">delete </button>
+    </form>
+</body>
+</html>
