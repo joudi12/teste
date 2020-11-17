@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <%result.forEach(element =>{%>
+    <h3> type: <%= element.type%></h3>
+    <p> text: <%= element.text%> </p>
+    <form action="/Fav" method="POST">
+        <input  type="text" name="type" value="<%= element.type%>" style="display: none;">
+        <input type="text" name="text" value="<%= element.text%>"style="display: none;">
+<button type="submit">add to favorite</button>
+    </form>
+    <% })%>
+    
+</body>
+
+</html>
